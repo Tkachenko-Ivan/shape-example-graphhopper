@@ -6,6 +6,13 @@
 
 **Линии в файлах созданы с погрешностью!**
 
+Текстовое представление можно использовать для создания линий с помощью SQL запросов, см. [ST_LineFromText](https://postgis.net/docs/ST_LineFromText.html):
+
+```SQL
+INSERT INTO road_temp (gid,geom) VALUES (1,ST_LineFromText('LINESTRING (66.08940600324757 57.261858384708496, 66.09133689803114 57.26600914483714)',4326))
+```
+
+
 ## intersect
 
 ![intersect](images/intersect.png) 
